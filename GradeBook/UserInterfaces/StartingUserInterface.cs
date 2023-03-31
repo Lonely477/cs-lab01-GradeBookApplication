@@ -1,6 +1,7 @@
 ﻿using GradeBook.GradeBooks;
 using Newtonsoft.Json;
 using System;
+using GradeBook.Enums;
 
 namespace GradeBook.UserInterfaces
 {
@@ -58,9 +59,7 @@ namespace GradeBook.UserInterfaces
                 return;
             }
 
-            BaseGradeBook gradeBook = new BaseGradeBook(name);
             Console.WriteLine("Created gradebook {0}.", name);
-            GradeBookUserInterface.CommandLoop(gradeBook);
         }
 
         public static void LoadCommand(string command)
